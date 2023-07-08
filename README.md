@@ -46,7 +46,14 @@ It consists of several independent modules that work together to provide a scala
 
 The Royal Reserve Bank project is designed using a microservices architecture, which structures the application as a collection of loosely coupled services. Each service represents a specific business capability and can be developed and scaled independently.
 <!--  -->
-![image](./docs/readme-assets/high-level-architecture.png)
+<!--
+![image](./docs/readme-assets/high-level-architecture.png#gh-light-mode-only)
+![image](./docs/readme-assets/high-level-architecture-dark.png#gh-dark-mode-only)
+ -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./docs/readme-assets/high-level-architecture-dark.png">
+  <img src="./docs/readme-assets/high-level-architecture.png">
+</picture>
 
 ## Architecture Patterns
 
