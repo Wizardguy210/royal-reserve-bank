@@ -153,7 +153,10 @@ The Reserve Bank API documentation provides detailed information about the avail
 <!-- -->
 To access the full API documentation, navigate to the root directory and execute the command `mvn javadoc:aggregate`. The generated Javadoc will be available in the target/site/apidocs folder. For convenience, I have exported the documentation to the [javadoc folder](./docs/javadoc) in the docs/ directory.
 
-![image](./docs/readme-assets/api-documentation.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./docs/readme-assets/api-documentation-dark.png">
+  <img src="./docs/readme-assets/api-documentation.png">
+</picture>
 
 <!-- add section about swagger doc here -->
 
