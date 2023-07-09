@@ -45,11 +45,7 @@ It consists of several independent modules that work together to provide a scala
 # Solution Architecture 🔍
 
 The Royal Reserve Bank project is designed using a microservices architecture, which structures the application as a collection of loosely coupled services. Each service represents a specific business capability and can be developed and scaled independently.
-<!--  -->
-<!--
-![image](./docs/readme-assets/high-level-architecture.png#gh-light-mode-only)
-![image](./docs/readme-assets/high-level-architecture-dark.png#gh-dark-mode-only)
- -->
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./docs/readme-assets/high-level-architecture-dark.png">
   <img src="./docs/readme-assets/high-level-architecture.png">
@@ -188,7 +184,10 @@ To perform manual testing using Postman, follow these steps:
 - Click the "Send" button to execute the request and observe the response.
 - Analyze the response data and verify that it matches the expected behavior.
 
-![image](./docs/readme-assets/manual-testing-with-postman.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./docs/readme-assets/manual-testing-with-postman-dark.png">
+  <img src="./docs/readme-assets/manual-testing-with-postman.png">
+</picture>
 
 Remember to ensure that the Royal Reserve Bank microservices are running before executing the requests in Postman to ensure successful communication with the APIs.
 
@@ -206,7 +205,10 @@ The project uses Prometheus and Grafana for monitoring and logging the microserv
 - The "Alerts" tab displays any alerts that have been triggered based on the metrics.
 - You can also use the "Graph" tab to view the metrics in the form of graphs.
 
-![image](./docs/readme-assets/prometheus-metrics.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./docs/readme-assets/prometheus-metrics-dark.png">
+  <img src="./docs/readme-assets/prometheus-metrics.png">
+</picture>
 
 ### Grafana
 
@@ -227,7 +229,10 @@ To set up Grafana with Prometheus as the data source and configure a dashboard u
 - Review the imported dashboard and make any necessary modifications or adjustments.
 - You can now view and interact with the imported dashboard, which will display the metrics and visualizations based on the Prometheus data source.
 
-![image](./docs/readme-assets/grafana-dashboard.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./docs/readme-assets/grafana-dashboard-dark.png">
+  <img src="./docs/readme-assets/grafana-dashboard.png">
+</picture>
 
 <!--
 # Deployment
