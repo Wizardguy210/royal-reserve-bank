@@ -11,7 +11,7 @@
     <h1>Table of Contents 🡇</h1>
   </summary>
 
-<img align="right" src="./docs/readme-assets/building-icon.png" width="405">
+<img align="right" src="./docs/readme-assets/building-icon.png" width="413">
 
    * [About](#about-)
    * [Solution Architecture](#solution-architecture-)
@@ -51,6 +51,11 @@ The Royal Reserve Bank project is designed using a microservices architecture, w
   <img src="./docs/readme-assets/high-level-architecture.png">
 </picture>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./docs/readme-assets/high-level-architecture-legend-dark.png">
+  <img src="./docs/readme-assets/high-level-architecture-legend.png">
+</picture>
+
 ## Architecture Patterns
 
 The key architectural patterns used in the project include:
@@ -67,7 +72,7 @@ The key architectural patterns used in the project include:
 <!--  -->
 - **Cache-aside Pattern:** Caching plays a crucial role in enhancing performance and reducing database load in microservices architecture. The Account API utilizes Redis template, while the Asset and Transaction API leverage Spring Cache. When a request requires data, the microservice first checks the cache. If the data is available, it is retrieved from the cache, avoiding the need to fetch it from the database. This caching strategy efficiently reduces response times and enhances the overall performance of the system.
 <!--  -->
-- **Circuit Breaker Pattern:** The Circuit Breaker pattern is used to handle faults and failures in distributed systems. It acts as a safeguard to prevent cascading failures when a microservice is unavailable or experiencing high latency. The Circuit Breaker is implemented using resilience4j library in the Transaction API. If it detects failures or slow responses, it "opens the circuit" and redirects subsequent requests to a fallback mechanism or returns an error response directly. This helps to protect the overall system from overloading and allows it to gracefully degrade when dependencies are unavailable.
+- **Circuit Breaker Pattern:** The Circuit Breaker pattern is used to handle faults and failures in distributed systems. It acts as a safeguard to prevent cascading failures when a microservice is unavailable or experiencing high latency. The Circuit Breaker is implemented using Resilience4J library in the Transaction API. If it detects failures or slow responses, it "opens the circuit" and redirects subsequent requests to a fallback mechanism or returns an error response directly. This helps to protect the overall system from overloading and allows it to gracefully degrade when dependencies are unavailable.
 <!-- - **Centralized Logging:** In a microservices architecture, it's crucial to have a centralized logging system to collect and analyze logs from various microservices. Centralized logging enables easy monitoring, troubleshooting, and analysis of the system's behavior. The microservices in the Royal Reserve Bank project send their logs to ELK platforms (Elasticsearch, Logstash, and Kibana). These platforms allow developers and operations teams to search, filter, and visualize logs, making it easier to detect and diagnose issues, track system performance, and ensure compliance with security and operational requirements. -->
 - **Security Pattern:** The Royal Reserve Bank project incorporates security measures throughout the architecture. The API Gateway handles authentication and authorization, ensuring that only authenticated and authorized requests reach the microservices. The microservices themselves follow secure coding practices and implement appropriate security controls, such as input validation, encryption of sensitive data, and protection against common vulnerabilities.
 <!--  -->
